@@ -7,12 +7,12 @@
         }
 
         
-        #menu {
+        .menu {
             background-color: #9DB04D;
             padding: 10px 0;
         }
 
-        #menu ul {
+        .menu ul {
             list-style: none;
             margin: 0;
             padding: 0;
@@ -21,11 +21,11 @@
             padding-left: 10%;
         }
 
-        #menu ul li {
+        .menu ul li {
             margin-right: 15px;
         }
 
-        #menu ul li a {
+        .menu ul li a {
             text-decoration: none;
             color: white;
             font-size: 18px;
@@ -35,12 +35,12 @@
             display: inline-block;
         }
 
-        #menu ul li a:hover {
+        .menu ul li a:hover {
             color: #DBE0A6; 
         }
 
         
-        #menu ul li a.active {
+        .menu ul li a.active {
             display: none; 
         }
 
