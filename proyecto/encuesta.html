@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <title>Encuesta UX - Innovafácil</title>
+</head>
+<body>
+
+    
+    <img src="imagen/img.png" alt="Logo Innovafácil" style="width: 100%; height: auto;">
+
+    
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="pedidos.html">PEDIDOS</a></li>
+            <li><a href="novedades.html">NOVEDADES</a></li>
+            <li><a href="encuesta.html" class="active">ENCUESTA</a></li>
+        </ul>
+    </nav>
+
+    
+    <div id="main">
+        <h1>Encuesta UX - Innovafácil</h1>
+        <p>Ayúdanos a mejorar nuestra página web respondiendo esta encuesta sobre tu experiencia como usuario.</p>
+
+        
+        <form action="/procesar-encuesta" method="post">
+            <ul>
+                
+                <li>
+                    <label for="usabilidad">¿Qué tan fácil fue navegar por nuestra página web?</label>
+                    <select id="usabilidad" name="usabilidad" required>
+                        <option value="">-- Selecciona una opción --</option>
+                        <option value="muy_facil">Muy fácil</option>
+                        <option value="facil">Fácil</option>
+                        <option value="regular">Regular</option>
+                        <option value="dificil">Difícil</option>
+                        <option value="muy_dificil">Muy difícil</option>
+                    </select>
+                </li>
+
+                
+                <li>
+                    <label for="diseño">¿Qué opinas del diseño visual de nuestra página?</label>
+                    <input type="radio" id="excelente" name="diseño" value="excelente" required> Excelente<br>
+                    <input type="radio" id="bueno" name="diseño" value="bueno"> Bueno<br>
+                    <input type="radio" id="regular" name="diseño" value="regular"> Regular<br>
+                    <input type="radio" id="malo" name="diseño" value="malo"> Malo<br>
+                </li>
+
+                
+                <li>
+                    <label for="tiempo">¿Cuánto tiempo tardaste en encontrar lo que buscabas?</label>
+                    <select id="tiempo" name="tiempo" required>
+                        <option value="">-- Selecciona una opción --</option>
+                        <option value="menos_de_1">Menos de 1 minuto</option>
+                        <option value="1_a_3">De 1 a 3 minutos</option>
+                        <option value="3_a_5">De 3 a 5 minutos</option>
+                        <option value="mas_de_5">Más de 5 minutos</option>
+                    </select>
+                </li>
+
+                
+                <li>
+                    <label for="calificación">Califica tu experiencia general (1: Muy mala, 5: Excelente):</label>
+                    <input type="range" id="calificación" name="calificación" min="1" max="5" step="1">
+                </li>
+
+               
+                <li>
+                    <label for="funcionalidades">¿Qué funcionalidades adicionales te gustaría ver? (Selecciona todas las que correspondan)</label>
+                    <input type="checkbox" id="chat" name="funcionalidades" value="chat"> Chat en vivo<br>
+                    <input type="checkbox" id="soporte" name="funcionalidades" value="soporte"> Soporte técnico<br>
+                    <input type="checkbox" id="tutoriales" name="funcionalidades" value="tutoriales"> Tutoriales<br>
+                    <input type="checkbox" id="otra" name="funcionalidades" value="otra"> Otra<br>
+                </li>
+
+                
+                <li>
+                    <label for="comentarios">¿Tienes alguna sugerencia o comentario?</label>
+                    <textarea id="comentarios" name="comentarios" rows="5" placeholder="Escribe tus comentarios aquí..."></textarea>
+                </li>
+
+                
+                <li>
+                    <input type="submit" value="Enviar Encuesta">
+                </li>
+            </ul>
+        </form>
+    </div>
+
+</body>
+</html>
